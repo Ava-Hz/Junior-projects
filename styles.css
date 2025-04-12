@@ -1,0 +1,206 @@
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 30px;
+  margin: 2%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  text-align: left;
+}
+h1,
+h5 {
+  text-align: center;
+}
+input,
+button {
+  width: 100%;
+  padding: 20px; /* Increased padding for better spacing */
+  margin-top: 30px 0; /* More spacing */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+input {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(56, 12, 12);
+}
+.input {
+  margin: 10px;
+}
+input::placeholder {
+  color: hsla(0, 8%, 7%, 0.514);
+}
+button {
+  background: #ff7b00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button {
+  border-radius: 4px;
+  margin: 20px;
+  font-size: larger;
+}
+button:hover {
+  background: #ff5a00;
+}
+#fullName-text,
+#github-text,
+#email-text,
+#profile_text {
+  color: rgb(53, 60, 66);
+  text-align: left;
+  /*margin-right: 70%;*/
+  font-size: smaller;
+}
+
+@media screen and (max-width: 790px) {
+  #github-text,
+  #email-text,
+  #profile_text {
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #github-text,
+  #email-text,
+  #profile_text {
+    margin-right: 35%;
+  }
+  .ticket {
+    width: 90vw;
+    height: auto;
+    margin: 20px 5%;
+    padding: 20px;
+    /* clip-path: none;*/
+    border-radius: 12px;
+  }
+  h3,
+  #today-date {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container2 {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  #profileImage {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+  }
+
+  #heading {
+    margin-top: 5%;
+    font-size: large;
+  }
+
+  #emailed {
+    width: 90%;
+    max-width: 500px;
+    color: #ff5a00;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    font-size: smaller;
+  }
+  #ticketName,
+  #ticketGithub {
+    font-size: 0.7rem;
+  }
+}
+
+/*reserved page*/
+.centerize {
+  text-align: center;
+}
+#emailed,
+#heading {
+  width: 35pc;
+  margin: 0 auto;
+}
+#heading {
+  margin-top: 35px;
+  width: 40pc;
+  font-weight: bold;
+  color: rgb(37, 9, 63);
+}
+#emailed {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.parent {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Adjust based on need */
+}
+
+.ticket {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #240744;
+}
+
+h3,
+#today-date {
+  margin-left: 50px;
+}
+.container2 {
+  margin-top: 80px;
+  text-align: center;
+}
+#profileImage {
+  width: 50%;
+  border-radius: 4%;
+  margin-left: 80px;
+}
+#svg {
+  display: inline-flex;
+  width: 20px;
+}
+#ticketGithub {
+  font-size: small;
+}
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
